@@ -96,6 +96,7 @@ open_navigation_desktop.addEventListener("click", () => {
 
       // Adjust body width and sidebarw width
       navAnim("140px", "start", "1rem", "calc(100% - 140px)", "140px");
+      toggleDarkMode.style.cssText = "margin: 0; background: none;";
     } else {
       const reversedIndex = sideBarItemLabel.length - 1 - index;
       const delay = reversedIndex * 30;
@@ -108,6 +109,7 @@ open_navigation_desktop.addEventListener("click", () => {
       // Adjust body with and sidebar width to initial position when menu icon is clicked again
       setTimeout(() => {
         navAnim("5rem", "center", "0.5rem", "calc(100% - 5rem)", "5rem");
+        toggleDarkMode.style.cssText = "margin: 0, auto; background: #fff;";
       }, 800);
     }
   });

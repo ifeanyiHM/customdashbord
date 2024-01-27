@@ -850,6 +850,9 @@ main .top-platform .progress:nth-child(5) .progress-bar .progress-width {
   }
   nav .container .navigation-list ul .light-dark-mode {
     background: #fff;
+    width: 2.875rem;
+    padding: 0;
+    margin: 0 auto;
   }
   nav .container .navigation-list ul .light-dark-mode li {
     display: block;
