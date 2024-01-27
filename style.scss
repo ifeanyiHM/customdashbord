@@ -23,6 +23,29 @@
 body {
   background: #fff;
   transition: all 0.5s;
+
+  /* Scrollbar styling */
+  &::-webkit-scrollbar {
+    width: 0.6rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 100vw;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 100vw;
+
+    &:hover {
+      background: #6c757d;
+    }
+  }
+
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background: #b2b5b9;
+    }
+  }
 }
 
 /*  ========================================================================== */
@@ -144,6 +167,25 @@ header {
         border: solid 0.048rem var(--secondary-color);
         padding: 0.488rem;
         cursor: pointer;
+
+        &::before {
+          content: attr(data-after);
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          top: 5px;
+          right: 17px;
+          width: 1.1rem;
+          height: 1.1rem;
+          background: rgb(215, 11, 11);
+          border-radius: 15px;
+          transition: all 0.5s;
+          transform: translate(80%);
+          color: white;
+          font-size: 0.5rem;
+          z-index: 200;
+        }
       }
 
       &.profile {
