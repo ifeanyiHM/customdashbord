@@ -106,7 +106,7 @@ open_navigation_desktop.addEventListener("click", () => {
         label.style.display = "none";
       }, 300 + delay);
 
-      // Adjust body with and sidebar width to initial position when menu icon is clicked again
+      // Adjust body with and sidebar width to initial position when menu icon is clicked again.
       setTimeout(() => {
         navAnim("5rem", "center", "0.5rem", "calc(100% - 5rem)", "5rem");
         toggleDarkMode.style.cssText = "margin: 0, auto; background: #fff;";
