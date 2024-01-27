@@ -1009,7 +1009,7 @@ main .top-platform .progress:nth-child(5) .progress-bar .progress-width {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(105deg) brightness(107%) contrast(101%);
 }
 .dark-mode nav .container .navigation-list ul li a span {
-  color: var(--font-color);
+  color: var(--dark-mode-font);
 }
 .dark-mode nav .container .navigation-list ul li.current p {
   background: var(--dark-mode-font);
