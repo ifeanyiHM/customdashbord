@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <!-- Logo -->
+      <div class="logo">
+        <a href="#">
+          <img src="asset/logo.svg" alt="logo" />
+        </a>
+        <h1>Dashboard</h1>
+      </div>
+
+      <!-- List item for header section -->
+      <ul>
+        <!-- header search element -->
+        <li class="search-box">
+          <img src="asset/Seacrh.svg" alt="search-input" />
+          <input type="text" placeholder="Search..." />
+        </li>
+
+        <!-- Menu icon for toggling sidebar -->
+        <li class="menu">
+          <div class="menu1">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu2">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </li>
+
+        <!-- other header elements -->
+        <li class="calendar">
+          <img src="asset/calendar-linear.svg" alt="campaign" />
+          <span>November 15, 2023</span>
+        </li>
+
+        <li>
+          <img
+            src="asset/notification.svg"
+            alt="notification"
+            class="notification"
+          />
+        </li>
+
+        <li class="profile">
+          <img src="asset/Profile-img.svg" alt="profile-pics" />
+          <div class="profile-name p1">
+            <span>Justin Bergson </span>
+            <span>Justin@gmail.com</span>
+          </div>
+          <img class="p1" src="asset/Arrow-Down.svg" alt="angle-down" />
+        </li>
+      </ul>
+    </header>
+
+    <!-- Sidebar navigation -->
+    <nav>
+      <div class="container">
+        <!-- when sidebar is toggled and logo in the header section is overidden -->
+        <a href="#">
+          <img class="logo" src="asset/logo.svg" alt="Logo" />
+        </a>
+
+        <span class="exit-navigation">&times;</span>
+        <div class="navigation-list">
+          <!-- List item for sidebar -->
+          <ul>
+            <div class="navigation-up">
+              <li class="current">
+                <p></p>
+                <a href="#"
+                  ><img
+                    src="asset/navigation/category-nav1.svg"
+                    alt="category"
+                  /><span>Category</span></a
+                >
+              </li>
+
+              <li>
+                <a href="#"
+                  ><img
+                    src="asset/navigation/trend-up-nav2.svg"
+                    alt="trends"
+                  /><span>Trends</span></a
+                >
+              </li>
+
+              <li>
+                <a href="#"
+                  ><img
+                    src="asset/navigation/profile-2user-nav3.svg"
+                    alt="profile"
+                  /><span>Profile</span></a
+                >
+              </li>
+
+              <li>
+                <a href="#"
+                  ><img src="asset/navigation/box-nav4.svg" alt="box" /><span
+                    >Box</span
+                  ></a
+                >
+              </li>
+
+              <li>
+                <a href="#"
+                  ><img
+                    src="asset/navigation/discount-shape-nav5.svg"
+                    alt="discount"
+                  /><span>Discount</span></a
+                >
+              </li>
+
+              <li>
+                <a href="#"
+                  ><img
+                    src="asset/navigation/info-circle-nav6.svg"
+                    alt="info"
+                  /><span>Info</span></a
+                >
+              </li>
+
+              <!-- light and dark mode property for toggle -->
+              <div class="light-dark-mode">
+                <li>
+                  <img
+                    src="asset/navigation/light-mode-nav7.svg"
+                    alt="light-mode"
+                  /><span>Light mode</span>
+                </li>
+
+                <li>
+                  <img
+                    src="asset/navigation/dark-mode-nav8.svg"
+                    alt="dark-mode"
+                  /><span>Dark mode</span>
+                </li>
+              </div>
+
+              <div class="navigation-down">
+                <li>
+                  <a href="#"
+                    ><img
+                      src="asset/navigation/arrow-right-nav9.svg"
+                      alt="arrow"
+                    /><span>arrow</span></a
+                  >
+                </li>
+
+                <li>
+                  <a href="#"
+                    ><img
+                      src="asset/navigation/setting-nav10.svg"
+                      alt="setting"
+                    /><span>Setting</span></a
+                  >
+                </li>
+
+                <li>
+                  <a href="#"
+                    ><img
+                      src="asset/navigation/logout-nav11.svg"
+                      alt="logout"
+                    /><span>Logout</span></a
+                  >
+                </li>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN SECTION -->
+    <main>
+      <!-- bar chart and graph section -->
+      <section class="sales-trends">
+        <div class="header">
+          <h2>Sales Trends</h2>
+          <div>
+            <span>Short:</span>
+            <span
+              >Weekly <img src="asset/Arrow-Down.svg" alt="arrow down"
+            /></span>
+          </div>
+        </div>
+        <div class="column-chart">
+          <div class="chart">
+            <div class="sales">
+              <div class="graph">
+                <span>50,000</span>
+                <span>50k</span>
+              </div>
+              <div class="graph">
+                <span>40,000</span>
+                <span>40k</span>
+              </div>
+              <div class="graph">
+                <span>30,000</span>
+                <span>30k</span>
+              </div>
+              <div class="graph">
+                <span>20,000</span>
+                <span>20k</span>
+              </div>
+              <div class="graph">
+                <span>10,000</span>
+                <span>10k</span>
+              </div>
+              <div class="graph">
+                <span>5,000&nbsp;&nbsp;&nbsp;</span>
+                <span>5k&nbsp;&nbsp;&nbsp;</span>
+              </div>
+              <div class="graph">
+                <span>0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span>0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="graph-line"></div>
+              <div class="graph-line"></div>
+              <div class="graph-line"></div>
+              <div class="graph-line"></div>
+              <div class="graph-line"></div>
+              <div class="graph-line"></div>
+              <div class="graph-line"></div>
+              <div class="graph-line"></div>
+              <div class="graph-line"></div>
+              <div class="graph-line"></div>
+            </div>
+          </div>
+
+          <div class="days">
+            <span data-height="68" data-value="Jan"></span>
+            <span data-height="68" data-value="Jan"></span>
+            <span data-height="120" data-value="Feb"></span>
+            <span data-height="120" data-value=""></span>
+            <span data-height="40" data-value="Mar"></span>
+            <span data-height="40" data-value="Mar"></span>
+            <span data-height="161" data-value="Apr"></span>
+            <span data-height="161" data-value=""></span>
+            <span data-height="81" data-value="Mei"></span>
+            <span data-height="81" data-value="Mei"></span>
+            <span data-height="216" data-value="Jun"
+              ><span class="details">$45,000</span></span
+            >
+            <span data-height="216" data-value=""
+              ><span class="details">$45,000</span></span
+            >
+            <span data-height="81" data-value="Jul"></span>
+            <span data-height="81" data-value="Jul"></span>
+            <span data-height="131" data-value="Aug"></span>
+            <span data-height="131" data-value=""></span>
+            <span data-height="182" data-value="Sep"></span>
+            <span data-height="182" data-value="Sep"></span>
+            <span data-height="51" data-value="Okt"></span>
+            <span data-height="51" data-value=""></span>
+            <span data-height="171" data-value="Nov"></span>
+            <span data-height="171" data-value="Nov"></span>
+            <span data-height="151" data-value="Des"></span>
+            <span data-height="151" data-value=""></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Day to day activity account and summary and trends -->
+      <section class="activity-summary">
+        <div class="summary">
+          <div class="trend-lines">
+            <img
+              src="asset/activitiy-summary/box-tick1.svg"
+              alt="total-order"
+            />
+            <img
+              src="asset/activitiy-summary/trend-line1.svg"
+              alt="trend-line"
+            />
+          </div>
+          <p>Total Order</p>
+          <p>350</p>
+          <div class="order-percentage">
+            <div>
+              <img src="asset/activitiy-summary/trend1.svg" alt="trends" />
+              <span>23.5%</span>
+            </div>
+            <span>vs. previous month</span>
+          </div>
+        </div>
+        <div class="summary">
+          <div class="trend-lines">
+            <img
+              src="asset/activitiy-summary/3d-rotate1.svg"
+              alt="total-refund"
+            />
+            <img
+              src="asset/activitiy-summary/trend-line2.svg"
+              alt="trend-line"
+            />
+          </div>
+          <p>Total Refund</p>
+          <p>270</p>
+          <div class="order-percentage">
+            <div>
+              <img src="asset/activitiy-summary/trend2.svg" alt="trend" />
+              <span>23.5%</span>
+            </div>
+            <span>vs. previous month</span>
+          </div>
+        </div>
+        <div class="summary">
+          <div class="trend-lines">
+            <img
+              src="asset/activitiy-summary/shopping-cart3.svg"
+              alt="shoppint-cart"
+            />
+            <img
+              src="asset/activitiy-summary/trend-line3.svg"
+              alt="trend-line"
+            />
+          </div>
+          <p>Average Sales</p>
+          <p>1567</p>
+          <div class="order-percentage">
+            <div>
+              <img src="asset/activitiy-summary/trend3.svg" alt="trends" />
+              <span>23.5%</span>
+            </div>
+            <span>vs. previous month</span>
+          </div>
+        </div>
+        <div class="summary">
+          <div class="trend-lines">
+            <img src="asset/activitiy-summary/coin4.svg" alt="total-income" />
+            <img
+              src="asset/activitiy-summary/trend-line4.svg"
+              alt="trend-line"
+            />
+          </div>
+          <p>Total Income</p>
+          <p>$350.000</p>
+          <div class="order-percentage">
+            <div>
+              <img src="asset/activitiy-summary/trend4.svg" alt="trends" />
+              <span>23.5%</span>
+            </div>
+            <span>vs. previous month</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- A section showing in tabular form recent orders from customers -->
+      <section class="recent-orders">
+        <div class="header">
+          <h2>Last Orders</h2>
+          <span>See All</span>
+        </div>
+        <table class="custom-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Date</th>
+              <th>Amount</th>
+              <th>Status</th>
+              <th>Invoice</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img src="asset/table/Frame1.svg" alt="customer" />
+                <span>Marcus Bergson</span>
+              </td>
+              <td>
+                <span>Nov 15, 2023</span>
+              </td>
+              <td>
+                <span>$80k</span>
+                <span>$80,000</span>
+              </td>
+              <td>Paid</td>
+              <td>
+                <img src="asset/table/document-download.svg" alt="document" />
+                <span>View</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="asset/table/Frame2.svg" alt="customer" />
+                <span>Jaydon Vaccaro</span>
+              </td>
+              <td>
+                <span>Nov 15, 2023</span>
+              </td>
+              <td>
+                <span>$150k</span>
+                <span>$150,000</span>
+              </td>
+              <td>Refund</td>
+              <td>
+                <img src="asset/table/document-download.svg" alt="document" />
+                <span>View</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="asset/table/Frame3.svg" alt="customer" />
+                <span>Corey Schleifer</span>
+              </td>
+              <td>
+                <span>Nov 14, 2023</span>
+              </td>
+              <td>
+                <span>$87k</span>
+                <span>$87,000</span>
+              </td>
+              <td>Paid</td>
+              <td>
+                <img src="asset/table/document-download.svg" alt="document" />
+                <span>View</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="asset/table/Frame4.svg" alt="customer" />
+                <span>Cooper Press</span>
+              </td>
+              <td>
+                <span>Nov 14, 2023</span>
+              </td>
+              <td>
+                <span>$100k</span>
+                <span>$100,000</span>
+              </td>
+              <td>Refund</td>
+              <td>
+                <img src="asset/table/document-download.svg" alt="document" />
+                <span>View</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="asset/table/Frame5.svg" alt="customer" />
+                <span>Philip Lubin</span>
+              </td>
+              <td>
+                <span>Nov 13, 2023</span>
+              </td>
+              <td>
+                <span>$78k</span>
+                <span>$78,000</span>
+              </td>
+              <td>Paid</td>
+              <td>
+                <img src="asset/table/document-download.svg" alt="document" />
+                <span>View</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Most patronized platform in details -->
+      <section class="top-platform">
+        <div class="header">
+          <h2>Top Platform</h2>
+          <span>See All</span>
+        </div>
+        <div class="progress">
+          <h3>Book Bazaar</h3>
+          <div class="progress-bar">
+            <div class="progress-width"></div>
+          </div>
+          <div class="rate">
+            <span>$2,500,000</span>
+            <span>+15%</span>
+          </div>
+        </div>
+        <div class="progress">
+          <h3>Artisan Aisle</h3>
+          <div class="progress-bar">
+            <div class="progress-width"></div>
+          </div>
+          <div class="rate">
+            <span>$1,800,000</span>
+            <span>+10%</span>
+          </div>
+        </div>
+        <div class="progress">
+          <h3>Toy Troop</h3>
+          <div class="progress-bar">
+            <div class="progress-width"></div>
+          </div>
+          <div class="rate">
+            <span>$1,200,000</span>
+            <span>+15%</span>
+          </div>
+        </div>
+        <div class="progress">
+          <h3>Xstore</h3>
+          <div class="progress-bar">
+            <div class="progress-width"></div>
+          </div>
+          <div class="rate">
+            <span>$1,200,000</span>
+            <span>+15%</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
