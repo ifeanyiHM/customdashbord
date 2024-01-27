@@ -116,3 +116,9 @@ open_navigation_desktop.addEventListener("click", () => {
 
   open_navigation_desktop.classList.toggle("span-menu"); // Toggle menu icon ui for styling
 });
+
+//Generate random number for message and notification
+const afterContent = document.querySelector(".notification-content div");
+
+const random = Math.trunc(Math.random() * 20) + 1;
+afterContent.setAttribute("data-after", random);

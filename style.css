@@ -146,20 +146,17 @@ header ul li.calendar span {
 header ul li.calendar:hover span {
   display: inline;
 }
-header ul li .notification {
-  border-radius: 27px;
-  border: solid 0.048rem var(--secondary-color);
-  padding: 0.488rem;
-  cursor: pointer;
+header ul li.notification-content {
+  position: relative;
 }
-header ul li .notification::before {
+header ul li.notification-content div::before {
   content: attr(data-after);
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 5px;
-  right: 17px;
+  top: -5px;
+  right: 10px;
   width: 1.1rem;
   height: 1.1rem;
   background: rgb(215, 11, 11);
@@ -169,6 +166,12 @@ header ul li .notification::before {
   color: white;
   font-size: 0.5rem;
   z-index: 200;
+}
+header ul li .notification {
+  border-radius: 27px;
+  border: solid 0.048rem var(--secondary-color);
+  padding: 0.488rem;
+  cursor: pointer;
 }
 header ul li.profile {
   display: flex;
