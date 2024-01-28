@@ -122,3 +122,122 @@ const afterContent = document.querySelector(".notification-content div");
 
 const random = Math.trunc(Math.random() * 20) + 1;
 afterContent.setAttribute("data-after", random);
+
+// Progress bar percentage increase
+const progressBarElements = [
+  { selector: ".sp1", maxCount: 15, delay: 110 },
+  { selector: ".sp2", maxCount: 10, delay: 85 },
+  { selector: ".sp3", maxCount: 8, delay: 120 },
+  { selector: ".sp4", maxCount: 8, delay: 120 },
+];
+
+// Function to increment the precentage of each progress bar element
+function incrementContent(index) {
+  const { selector, maxCount, delay } = progressBarElements[index];
+  let currCont = 1;
+  const element = document.querySelector(selector);
+
+  // Function to update content with delay
+  function updateContent() {
+    if (currCont <= maxCount) {
+      element.textContent = "+" + currCont + "%";
+      currCont++;
+      setTimeout(updateContent, delay);
+    }
+  }
+
+  setTimeout(updateContent, 1000); // Initial delay before starting content update
+}
+
+// // Loop through the elements and initiate the incrementContent function
+// for (let i = 0; i < progressBarElements.length; i++) {
+//   incrementContent(i);
+// }
+
+// Function to animate progress bar width
+function animateElementWidth(elementId, targetWidth, duration) {
+  const element = document.querySelector(elementId);
+  let width = 0;
+
+  // Function to update width with animation
+  function updateWidth() {
+    if (width < targetWidth) {
+      width++;
+      element.style.width = width + "rem";
+      setTimeout(updateWidth, duration);
+    }
+  }
+
+  updateWidth();
+}
+
+// Set timeouts to initiate the width animation for each progress bar element
+function observeTimeout() {
+  setTimeout(() => {
+    animateElementWidth(".pw1", 15.313, 80);
+  }, 1000);
+
+  setTimeout(() => {
+    animateElementWidth(".pw2", 12.769, 125);
+  }, 1000);
+
+  setTimeout(() => {
+    animateElementWidth(".pw3", 7.633, 160);
+  }, 1000);
+
+  setTimeout(() => {
+    animateElementWidth(".pw4", 7.633, 160);
+  }, 1000);
+}
+
+const target = document.querySelector(".top-platform");
+
+const Callback = function (entries) {
+  const [entry] = entries;
+
+  if (entry.isIntersecting) {
+    for (let i = 0; i < progressBarElements.length; i++) {
+      incrementContent(i);
+    }
+
+    observeTimeout();
+
+    document
+      .querySelectorAll(".progress-width")
+      .forEach((el) => (el.style.transition = "all 0.5s"));
+  } else {
+    setTimeout(() => {
+      document
+        .querySelectorAll(".progress-width")
+        .forEach(
+          (el) => (el.style.cssText = "width: 0; transition: all 0.2s;")
+        );
+    }, 3000);
+  }
+};
+
+const jects = {
+  root: null,
+  threshold: 0.9,
+};
+const server = new IntersectionObserver(Callback, jects);
+server.observe(target);
+
+// Smooth scrolling
+const mybutton = document.getElementById("myBtn");
+
+window.addEventListener("scroll", scrollFunction);
+
+function scrollFunction() {
+  // Show the button when scrolled down 20px from the top, otherwise hide it
+  mybutton.style.display = window.scrollY > 30 ? "block" : "none";
+}
+
+// Function to scroll to the top of the document with smooth scrolling
+function topFunction() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+mybutton.addEventListener("click", topFunction);

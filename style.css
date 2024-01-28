@@ -293,9 +293,11 @@ nav .container .navigation-list ul .current p {
   right: 0px;
 }
 nav .container .navigation-list ul .light-dark-mode {
-  padding: 8px;
   background: #f3efef;
   border-radius: 100px;
+  width: 2.875rem;
+  padding: 0;
+  margin: 0 auto;
 }
 nav .container .navigation-list ul .light-dark-mode li {
   cursor: pointer;
@@ -632,7 +634,7 @@ main .top-platform .progress .progress-bar {
   margin-bottom: 1rem;
 }
 main .top-platform .progress .progress-bar .progress-width {
-  width: 15.313rem;
+  width: 0;
   background: #6160dc;
   height: inherit;
   border-radius: 40px;
@@ -645,17 +647,48 @@ main .top-platform .progress .rate {
   margin-bottom: 1.25rem;
   color: #525252;
 }
+main .top-platform .progress .rate span {
+  transition: all 0.5s;
+}
 main .top-platform .progress:nth-child(3) .progress-bar .progress-width {
-  width: 12.769rem;
   background: #54c5eb;
 }
 main .top-platform .progress:nth-child(4) .progress-bar .progress-width {
-  width: 7.633rem;
   background: #ffb74a;
 }
 main .top-platform .progress:nth-child(5) .progress-bar .progress-width {
-  width: 7.633rem;
   background: #ff4a55;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  border-radius: 50px;
+  z-index: 999;
+  border: none;
+  outline: none;
+  background-color: #34caa5;
+  color: white;
+  cursor: pointer;
+  padding: 5px 15px 10px 15px;
+  font-size: 2rem;
+}
+#myBtn:hover {
+  background-color: #62d4b8;
+  animation: smooth 0.8s ease-in-out 0s 1;
+}
+@keyframes smooth {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(7px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /*  ========================================================================== */
@@ -708,6 +741,10 @@ main .top-platform .progress:nth-child(5) .progress-bar .progress-width {
   }
   nav .container .navigation-list ul li:hover a img {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(105deg) brightness(107%) contrast(101%);
+  }
+  nav .container .navigation-list ul .light-dark-mode {
+    width: 8rem;
+    padding: 8px;
   }
   nav .container .navigation-list ul .light-dark-mode li {
     display: inline;
